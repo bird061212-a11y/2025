@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		  <meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>供应商</title>
+		<!-- 新 Bootstrap5 核心 CSS 文件 -->
+		<link rel="stylesheet" href="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/css/bootstrap.min.css">
+
+		<!-- 最新的 Bootstrap5 核心 JavaScript 文件 -->
+		<script src="https://cdn.staticfile.net/twitter-bootstrap/5.1.1/js/bootstrap.bundle.min.js"></script>
+		<link rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<style>
+			body {
+				background-color: #E6E7E9;
+				margin: 0;
+			}
+
+			.whitebox {
+				background-color: white;
+				color: #333; /* 文字改深色（原白色文字在白背景上看不见） */
+				            width: 100%;
+				            max-width: 750px; /* 最大宽度限制（适配大屏） */
+				            min-height: 900px; /* 最小高度，避免内容过少时卡片过矮 */
+				            margin: 0 auto; /* 水平居中（关键） */
+				            padding: 30px; /* 卡片内部边距，避免内容贴边 */
+				            border-radius: 8px; /* 圆角，更美观 */
+				            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* 轻微阴影，增强层次感 */
+
+			.fuhao {
+				color: orangered;
+			}
+
+			#anniu {
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="whitebox ">
+			<div>
+				<h1><i class="fa fa-building" style="color:blue"> </i>新增供应商 </h1>
+
+				<hr />
+			</div>
+			<div class="container mb-3">
+				<h6>供应商名称<span class="fuhao">&#8727;</span></h6>
+				<input class="container" type="text" placeholder="请输入供应商名称" />
+			</div>
+			<div class=" container mb-3">
+				<h6>统一信用代码<span class="fuhao">&#8727;</span></h6>
+				<input class="container" type="text" placeholder="请输入统一信用代码" />
+			</div>
+			<div class="container mb-3">
+				<h6>地址</h6>
+				<textarea rows="3" cols="90%" class="form-control" placeholder="请输入供应商地址"></textarea>
+			</div>
+			<div class="container mb-3">
+				<h6>是否合格<span class="fuhao">&#8727;</span></h6>
+
+				<input type="radio" name="nuc" class="form-check-input" />是
+				&nbsp &nbsp &nbsp &nbsp
+				<input type="radio" name="nuc" class="form-check-input" />否
+			</div>
+			<div class="container mb-3">
+				<h6>联系人</h6>
+				<input class="container" type="text" placeholder="请输入联系人姓名" />
+			</div>
+			<div class="container mb-3">
+				<h6>电话</h6>
+				<input class="container" type="text" placeholder="请输入联系电话" />
+			</div>
+			<div class="container mb-3">
+				<h6>供应商类型<span class="fuhao">&#8727;</span></h6>
+				<select class="container">
+					<option>请选择供应商类型</option>
+				</select>
+			</div>
+			<div class="container mb-3">
+				<input type="checkbox" />是否为金牌供应商
+			</div>
+			<div class="container mb-3">
+				<h6>备注</h6>
+				<textarea rows="3" cols="84" class="form-control" placeholder="请输入备注信息"></textarea>
+			</div>
+			<div id="anniu" class=" mb-3">
+				<button class="btn btn-secondary"><i class="fa fa-close">取消</i></button>
+				<button class="btn btn-primary"><i class="fa fa-file">保存</i></button>
+			</div>
+
+
+	</body>
+</html>
