@@ -18,15 +18,11 @@
 			text-align: center;
 			margin-bottom: 30px;
 			color: #2c3e50;
-
 		}
-
 		body {
 			background-color: #E6E7E9;
 			margin: 0;
-
 		}
-
 		.whitebox {
 			background-color: white;
 			color: #333;
@@ -48,7 +44,6 @@
 		.fuhao {
 			color: orangered;
 		}
-
 		.anniu {
 			background-color: #1E9FFF;
 
@@ -59,66 +54,56 @@
 			font-size: 16px;
 			cursor: pointer;
 			width: 100%;
-
 		}
-
 		.anniu:hover {
 			background-color: #0b5ed7;
 		}
-
-		#wenbenkuang {
-			width: 100%;
-			padding: 10px 15px;
-			border: 1px solid #ced4da;
-			border-radius: 4px;
-			font-size: 16px;
-
-		}
-
-		#wenbenkuang {
-			border-color: #80bdff;
-			outline: 0;
-
-		}
+		.form-input {
+					width: 100%;
+					padding: 10px 15px;
+					border: 1px solid #ced4da;
+					border-radius: 4px;
+					font-size: 16px;
+					transition: border-color 0.3s ease;
+				}
+		.form-input:focus {
+		            border-color: #80bdff; /* 聚焦边框色 */
+		            outline: none; /* 清除默认outline */
+		            box-shadow: 0 0 0 3px rgba(128, 189, 255, 0.25); /* 聚焦阴影 */
+		        }
 	</style>
-
 	<body>
-
 		<form onsubmit="return form_check()">
 			<div class="whitebox">
 				<div class="biaotou">
 					<h2>学生注册表单</h2>
 				</div>
-				<div class="container mb-3">
+				<div class="container mb-3 .form-grou">
 					<h6>姓名<span class="fuhao">&#8727;</span></h6>
-					<input id="name" class="container" type="text" placeholder="请输入您的姓名" />
+					<input id="name" class="container form-input" type="text" placeholder="请输入您的姓名" />
 				</div>
-				<div class="container mb-3">
+				<div class="container mb-3 ">
 					<h6>手机号<span class="fuhao">&#8727;</span></h6>
-					<input class="container " id="phone" type="text" placeholder="请输入11位手机号码" />
+					<input class="container form-input" id="phone" type="text" placeholder="请输入11位手机号码" />
 				</div>
-				<div class="container mb-3">
+				<div class="container mb-3 ">
 					<h6>邮箱<span class="fuhao">&#8727;</span></h6>
-					<input class="container " id="email" name="email" type="email"
+					<input class="container form-input" id="email" name="email" type="email"
 						placeholder="可选,如student@school.com" />
 				</div>
-				<div class="container mb-3">
+				<div class="container mb-3 ">
 					<h6>密码<span class="fuhao">&#8727;</span></h6>
-					<input class="container" id="password" type="password" placeholder="至少六位包含字母和数字" />
+					<input class="container form-input" id="password" type="password" placeholder="至少六位包含字母和数字" />
 				</div>
-				<div class="container mb-3">
+				<div class="container mb-3 ">
 					<h6>确认密码<span class="fuhao">&#8727;</span></h6>
-					<input class="container" id="repassword" type="password" placeholder="至少六位包含字母和数字" />
+					<input class="container form-input" id="repassword" type="password" placeholder="至少六位包含字母和数字" />
 				</div>
 				<br />
 				<div divclass="container mb-3">
 					<button type="submit" class="anniu container mb-3">注册</button>
 			</div>
-
-
-
 			</div>
-
 		</form>
 		<script>
 			function form_check() {
